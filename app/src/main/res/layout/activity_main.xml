@@ -18,7 +18,7 @@
             android:layout_alignParentStart="true"
             app:srcCompat="@drawable/camara" />
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logInsta"
             android:layout_width="300dp"
             android:layout_height="64dp"
             android:layout_centerInParent="true"
@@ -132,7 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="501dp"
             android:layout_below="@+id/info"
-            app:srcCompat="@drawable/imageMorat" />
+            app:srcCompat="@drawable/imgmorat" />
 
     </RelativeLayout>
 
