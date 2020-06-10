@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="#1E1E1E"
+        android:layout_height="64dp">
+        <ImageView
+            android:id="@+id/camara"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/camara" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/logo" />
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/mensajes" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#1E1E1E"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/search" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/plus" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/notifications" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/controls"
+        android:background="#000"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:id="@+id/stories"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                app:srcCompat="@drawable/story1" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:srcCompat="@drawable/story2" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:srcCompat="@drawable/story3" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:srcCompat="@drawable/story4" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                app:srcCompat="@drawable/story5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_below="@id/stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/user" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/options" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="501dp"
+            android:layout_below="@+id/info"
+            app:srcCompat="@drawable/imageMorat" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
